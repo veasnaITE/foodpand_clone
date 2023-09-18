@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodpanda_clone/views/home/homescreen.dart';
+import 'package:foodpanda_clone/views/restaurant/reataurant.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        fontFamily: GoogleFonts.poppins().fontFamily,
       ),
+      debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
   }

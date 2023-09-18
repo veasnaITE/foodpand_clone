@@ -14,7 +14,7 @@ class MyDrawerCus extends StatelessWidget {
           children: [
             UserAccountsDrawerHeader(
                 decoration: BoxDecoration(
-                  color: Colors.pink[400],
+                  color: Colors.pink[700],
                 ),
                 currentAccountPicture: ClipRRect(
                     borderRadius: BorderRadius.circular(50),
@@ -61,7 +61,7 @@ class MyDrawerCus extends StatelessWidget {
             Divider(),
             Padding(
               padding: const EdgeInsets.only(left: 22),
-              child: RichText(text: TextSpan(
+              child: RichText(text: const TextSpan(
                   style: TextStyle(color: Colors.black,
                     fontSize: 17,
                     height: 2,
