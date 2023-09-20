@@ -46,7 +46,7 @@ class SliderThreeCard extends StatelessWidget {
                         const Spacer(),
                         Padding(
                           padding: const EdgeInsets.only(left: 70,bottom: 5),
-                          child: Image.asset('assets/images/image 8.png'),
+                          child: Image.asset('assets/images/drink.png'),
                         ),
                       ],
                     ),
@@ -88,10 +88,11 @@ class SliderThreeCard extends StatelessWidget {
                                         )),
                                       ),
                                     ),
-                                    Expanded(
+                                    Container(
+
                                       child: Padding(
                                         padding: const EdgeInsets.only(left: 110,bottom: 5),
-                                        child: Image.asset('assets/images/image 9.png'),
+                                        child: Image.asset('assets/images/pickup.png'),
                                       ),
                                     ),
                                   ],
@@ -132,7 +133,7 @@ class SliderThreeCard extends StatelessWidget {
                                         height: 80,
                                       decoration: const BoxDecoration(
                                         image: DecorationImage(
-                                            image: AssetImage("assets/images/image 10.png"),
+                                            image: AssetImage("assets/images/sender.jpg"),
                                             fit: BoxFit.contain),
                                       ),
                                     ),

@@ -101,7 +101,7 @@ class _CheckOutState extends State<CheckOut> {
                                 Text(
                                   "Delivery address",
                                   style: TextStyle(
-                                    fontSize: 25,
+                                    fontSize: 20,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -208,7 +208,7 @@ class _CheckOutState extends State<CheckOut> {
                                 softWrap: true,
                                 style: TextStyle(
                                     color: Colors.black87,
-                                    fontSize: 18,
+                                    fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
                             ),
@@ -265,7 +265,7 @@ class _CheckOutState extends State<CheckOut> {
                             Text(
                               "Payment method",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 20),
+                                  fontWeight: FontWeight.bold, fontSize: 18),
                             ),
                             Spacer(),
                             Icon(
@@ -294,13 +294,13 @@ class _CheckOutState extends State<CheckOut> {
                             Text(
                               "Cash",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 17),
+                                  fontWeight: FontWeight.bold, fontSize: 18),
                             ),
                             Spacer(),
                             Text(
                               "\$ 5.68",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
+                                  fontWeight: FontWeight.bold, fontSize: 16),
                             )
                           ],
                         ),
@@ -349,7 +349,7 @@ class _CheckOutState extends State<CheckOut> {
                           Text(
                             "Tip your rider",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 20),
+                                fontWeight: FontWeight.bold, fontSize: 18),
                           )
                         ],
                       ),
@@ -357,7 +357,7 @@ class _CheckOutState extends State<CheckOut> {
                         padding: EdgeInsets.all(10.0),
                         child: Text(
                           "100% of the tips go to yours rider we don't deduct anything form it",
-                          style: TextStyle(fontSize: 18, color: Colors.black54),
+                          style: TextStyle(fontSize: 16, color: Colors.black54),
                         ),
                       ),
                       Row(
@@ -491,7 +491,7 @@ class _CheckOutState extends State<CheckOut> {
                             Text(
                               "Order Summary",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 20),
+                                  fontWeight: FontWeight.bold, fontSize: 18),
                             ),
                           ],
                         ),
@@ -506,12 +506,12 @@ class _CheckOutState extends State<CheckOut> {
                             Text(
                               "1x Milk Tea",
                               style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.bold),
+                                  fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                             Spacer(),
                             Text(
                               '\$2.68',
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: 16),
                             ),
                             SizedBox(
                               width: 10,
@@ -526,12 +526,12 @@ class _CheckOutState extends State<CheckOut> {
                             ),
                             Text(
                               "Subtotal",
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: 16),
                             ),
                             Spacer(),
                             Text(
                               '\$2.89',
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: 16),
                             ),
                             SizedBox(
                               width: 10,
@@ -548,12 +548,12 @@ class _CheckOutState extends State<CheckOut> {
                             ),
                             Text(
                               "Delivery fee",
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: 16),
                             ),
                             Spacer(),
                             Text(
                               '\$2.63',
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: 16),
                             ),
                             SizedBox(
                               width: 10,
@@ -570,12 +570,12 @@ class _CheckOutState extends State<CheckOut> {
                             ),
                             Text(
                               "VAT",
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: 16),
                             ),
                             Spacer(),
                             Text(
                               '\$0.28',
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: 16),
                             ),
                             SizedBox(
                               width: 10,
@@ -618,7 +618,7 @@ class _CheckOutState extends State<CheckOut> {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
-                              fontSize: 20,
+                              fontSize: 18,
                             ),
                           ),
                         ],

@@ -71,6 +71,7 @@ class _Restaurant extends State<Restaurant> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false,
         title: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

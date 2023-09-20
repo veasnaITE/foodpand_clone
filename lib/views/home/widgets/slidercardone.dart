@@ -40,11 +40,11 @@ class SliderOneCard extends StatelessWidget {
                       ]
                   )),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 10),
-                  child: Align(
-                    alignment: Alignment.bottomRight,
-                    child: Image.asset('assets/images/image 8.png'),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: Container(
+                    width: 200,
+                      child: Image.asset('assets/images/food.png'),
                   ),
                 ),
               ],
