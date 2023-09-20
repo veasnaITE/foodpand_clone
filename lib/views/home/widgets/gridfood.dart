@@ -15,11 +15,11 @@ class GridFood extends StatelessWidget {
             height: 130,
             decoration:BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
-                color: Colors.grey[300]
+                color: Colors.grey[100]
             ),
             child: Image.network('https://bobakingusa.com/wp-content/uploads/2020/09/oolongmilktea-1.png'),
           ),
-          Text("Milk Tea",
+          const Text("Milk Tea",
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 height: 2

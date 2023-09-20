@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:foodpanda_clone/views/DetailRestaurant/detailRetaurant.dart';
 import 'package:foodpanda_clone/views/home/widgets/cus_sliverbanner.dart';
 import 'package:foodpanda_clone/views/home/widgets/gridfood.dart';
 import 'package:foodpanda_clone/views/home/widgets/mydrawer_cus.dart';
@@ -21,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.white,
       key: _scaffoldKey,
       appBar: AppBar(
         systemOverlayStyle: SystemUiOverlayStyle(
@@ -62,16 +63,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      drawer: MyDrawerCus(),
+      drawer: const MyDrawerCus(),
       body: CustomScrollView(
         slivers: [
-          MysliverBanerCus(),
-          SliderOneCard(),
-          SliderThreeCard(),
-
+          const MysliverBanerCus(),
+          const SliderOneCard(),
+          const SliderThreeCard(),
           const SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: EdgeInsets.only(top: 12,left: 20,bottom: 5),
               child: Text("Popular Restaurants",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -87,13 +87,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
                   itemBuilder:(context,index){
-                    return TopRestaurant();
+                    return GestureDetector(
+                      child: const TopRestaurant(),
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Restaurant()),
+                        );
+                    },);
                   }),
             )
           ),
           const SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: EdgeInsets.only(left: 20,bottom: 20),
               child: Text("Cuisines",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -103,10 +110,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
            SliverToBoxAdapter(
              child:SizedBox(
-               height: 350,
+               height: 340,
                child: GridView.builder(
                  scrollDirection: Axis.horizontal,
-                 itemCount: 50, // show how many items you want
+                 itemCount: 10, // show how many items you want
                  gridDelegate:
                  const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                    itemBuilder: (context, index) {
@@ -117,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
            ),
            const SliverToBoxAdapter(
              child: Padding(
-               padding: EdgeInsets.all(8.0),
+               padding: EdgeInsets.only(left: 20,bottom: 20),
                child: Text("Pick up at a restaurant near you",
                style: TextStyle(
                  fontWeight: FontWeight.bold,
@@ -145,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           const SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: EdgeInsets.only(top:15,left: 20,bottom: 10),
               child: Text(
                 "Your daily deals",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
@@ -159,9 +166,33 @@ class _HomeScreenState extends State<HomeScreen> {
                 scrollDirection: Axis.horizontal,
                 itemCount: 10,
                 itemBuilder: (context, index) {
-                  return Voucher();
+                  return const Voucher();
                 }),
           )),
+          const SliverToBoxAdapter(
+            child: Padding(
+              padding: EdgeInsets.only(top: 15,left: 20,bottom: 10),
+              child: Text("Shop",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18
+                ),),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child:SizedBox(
+              height: 200,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 8,
+                  itemBuilder: (context,index){
+                return const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: GridFood(),
+                );
+              })
+            ),
+          ),
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -185,9 +216,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(
                             color: Colors.black87, fontSize: 18),),
                     ])),
-                    Spacer(),
+                    const Spacer(),
                     Image.network('https://images.deliveryhero.io/image/foodpanda/pandapro/img_top.png'),
-                    SizedBox(width: 20,)
+                    const SizedBox(width: 20,)
                   ],
                 ),
               ),
@@ -216,9 +247,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: TextStyle(
                                 color: Colors.black87, fontSize: 18),),
                         ])),
-                    Spacer(),
+                    const Spacer(),
                     Image.network('https://images.deliveryhero.io/image/foodpanda/corporate/landing_page/illustration_allowancepaupau.png'),
-                    SizedBox(width: 20,)
+                    const SizedBox(width: 20,)
                   ],
                 ),
               ),

@@ -17,7 +17,7 @@ class Voucher extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image:const DecorationImage(
-                    image: NetworkImage('https://www.ruthdelacruz.com/wp-content/uploads/2022/02/Pandamart-Valentines-Vouchers.png'),
+                    image: AssetImage('assets/images/vouchers.png'),
                     fit: BoxFit.cover
                 )
             ),

@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class SliderThreeCard extends StatelessWidget {
@@ -9,132 +9,136 @@ class SliderThreeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Container(
-          child: Row(
-            children: [
-              Expanded(
-                child:  Container(
-                  height: 300,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.white
-                  ),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: RichText(text: const TextSpan(
-                            children: [
-                              TextSpan(text: "Groceries\n",style:
-                              TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                  color: Colors.black87
-                              )),
-                              TextSpan(text: "Supermarkets, Marts, Shops, & More",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.black54
-                                  )),
-                            ]
-                        )),
-                      ),
-                      Spacer(),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 70,bottom: 5),
-                        child: Image.asset('assets/images/image 8.png'),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(width: 15,),
-              Expanded(
-                  child: SizedBox(
-                    height: 300,
+      child: Container(
+        color: Colors.grey[200],
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Container(
+            child: Row(
+              children: [
+                Expanded(
+                  child:  Container(
+                    height: 250,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.white
+                    ),
                     child: Column(
                       children: [
-                        Expanded(
-                            flex:4,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(15),
-                                  color: Colors.white
-                              ),
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(top: 10,left: 0),
-                                      child: RichText(text: const TextSpan(
-                                          children: [
-                                            TextSpan(text: "Pick-up\n",style:
-                                            TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 20,
-                                                color: Colors.black87
-                                            )),
-                                            TextSpan(text: "Up to 50% off",
-                                                style: TextStyle(
-                                                    fontSize: 16,
-                                                    color: Colors.black54
-                                                )),
-                                          ]
-                                      )),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(left: 70,bottom: 5),
-                                      child: Image.asset('assets/images/image 8.png'),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )),
-                        SizedBox(height: 10,),
-                        Expanded(
-                            flex:2,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(15),
-                                  color: Colors.white
-                              ),
-                              child: Row(
-                                children: [
-                                  SizedBox(width: 10,),
-                                  Expanded(
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: RichText(text: const TextSpan(
-                                          children: [
-                                            TextSpan(text: "Pandasend\n",style:
-                                            TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 20,
-                                                color: Colors.black87
-                                            )),
-                                            TextSpan(text: "send parcels in a tap",
-                                                style: TextStyle(
-                                                    fontSize: 16,
-                                                    color: Colors.black54
-                                                )),
-                                          ]
-                                      )),
-                                    ),),
-                                  Expanded(
-                                    child: Image.asset('assets/images/image 8.png'),
-                                  ),
-                                ],
-                              ),
-                            ))
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: RichText(text: const TextSpan(
+                              children: [
+                                TextSpan(text: "Groceries\n",style:
+                                TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                    color: Colors.black87
+                                )),
+                                TextSpan(text: "Supermarkets, Marts, Shops, & More",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.black54
+                                    )),
+                              ]
+                          )),
+                        ),
+                        Spacer(),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 70,bottom: 5),
+                          child: Image.asset('assets/images/image 8.png'),
+                        ),
                       ],
                     ),
-                  )
-              ),
-            ],
+                  ),
+                ),
+                SizedBox(width: 6,),
+                Expanded(
+                    child: SizedBox(
+                      height: 250,
+                      child: Column(
+                        children: [
+                          Expanded(
+                              flex:4,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    color: Colors.white
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(top: 10,left: 10),
+                                        child: RichText(text: const TextSpan(
+                                            children: [
+                                              TextSpan(text: "Pick-up\n",style:
+                                              TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 20,
+                                                  color: Colors.black87
+                                              )),
+                                              TextSpan(text: "Up to 50% off",
+                                                  style: TextStyle(
+                                                      fontSize: 16,
+                                                      color: Colors.black54
+                                                  )),
+                                            ]
+                                        )),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(left: 110,bottom: 5),
+                                        child: Image.asset('assets/images/image 9.png'),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )),
+                          SizedBox(height: 10,),
+                          Expanded(
+                              flex:2,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    color: Colors.white
+                                ),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                       SizedBox(width: 5,),
+                                       SizedBox(
+                                         width: 110,
+                                         child: RichText(text: const TextSpan(
+                                              children: [
+                                                TextSpan(text: "Pandasend\n",style:
+                                                TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 20,
+                                                    color: Colors.black87
+                                                )),
+                                                TextSpan(text: "send parcels in a tap",
+                                                    style: TextStyle(
+                                                        fontSize: 16,
+                                                        color: Colors.black54
+                                                    )),
+                                              ]
+                                          )),
+                                       ),
+                                    Expanded(
+                                      child: Image.asset('assets/images/image 10.png'),
+                                    ),
+                                  ],
+                                ),
+                              ))
+                        ],
+                      ),
+                    )
+                ),
+              ],
+            ),
           ),
         ),
       ),
