@@ -45,35 +45,6 @@ class _LottiState extends State<Lotti> {
               ),
               LottieBuilder.asset("assets/images/food.json"),
               Padding(
-                padding: const EdgeInsets.all(1.0),
-                child: Container(
-                  height: 170,
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(1.0),
-                        child: LottieBuilder.asset(
-                          "assets/images/loadingpink.json",
-                          height: 100,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(1.0), // Add padding here
-                        child: Text(
-                          "Waiting For Order",
-                          style: TextStyle(
-                            fontSize: 27,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.pink.shade600,
-                          ),
-                        ),
-                      ),
-
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
                 padding: const EdgeInsets.symmetric(vertical: 1),
                 child: Container(
                   decoration: const BoxDecoration(

@@ -43,7 +43,7 @@ class SliderThreeCard extends StatelessWidget {
                               ]
                           )),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Padding(
                           padding: const EdgeInsets.only(left: 70,bottom: 5),
                           child: Image.asset('assets/images/image 8.png'),
@@ -52,7 +52,7 @@ class SliderThreeCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 6,),
+                const SizedBox(width: 6,),
                 Expanded(
                     child: SizedBox(
                       height: 250,
@@ -97,7 +97,7 @@ class SliderThreeCard extends StatelessWidget {
                                   ],
                                 ),
                               )),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 5,),
                           Expanded(
                               flex:2,
                               child: Container(
@@ -113,7 +113,7 @@ class SliderThreeCard extends StatelessWidget {
                                          width: 110,
                                          child: RichText(text: const TextSpan(
                                               children: [
-                                                TextSpan(text: "Pandasend\n",style:
+                                                TextSpan(text: "Pandasen\n",style:
                                                 TextStyle(
                                                     fontWeight: FontWeight.bold,
                                                     fontSize: 20,
@@ -127,8 +127,14 @@ class SliderThreeCard extends StatelessWidget {
                                               ]
                                           )),
                                        ),
-                                    Expanded(
-                                      child: Image.asset('assets/images/image 10.png'),
+                                    Container(
+                                      width: 70,
+                                        height: 80,
+                                      decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage("assets/images/image 10.png"),
+                                            fit: BoxFit.contain),
+                                      ),
                                     ),
                                   ],
                                 ),
